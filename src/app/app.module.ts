@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WidgetModule } from 'projects/widget/src/public_api';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import { FactoryTranslateLoader } from './factory-translate-loader.service';
 import { ServiceTranslateLoader } from './service-translate-loader.service';
 
 @NgModule({

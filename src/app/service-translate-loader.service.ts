@@ -10,9 +10,10 @@ export class ServiceTranslateLoader implements TranslateLoader {
     private translateLoaders: TranslateLoader[] = [];
 
     constructor(
-        private libTranslate: LibTranslateLoader
+        libTranslate: LibTranslateLoader,
+        // lib2Translate: Lib2TranslateLoader
     ) {
-        this.translateLoaders = [this.libTranslate];
+        this.translateLoaders = [libTranslate];
     }
 
     getTranslation(lang: string): Observable<any> {
